@@ -1,24 +1,28 @@
-// var declaration 
-xpos = 1; 
-xspeed = 2; 
+//svg declarations 
+let img1;
+
+function preload() {
+  img1 = loadImage('test_assets/frame.svg');
+  
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  
+  //enter button set up 
+  let button = createButton('Enter');
+  button.position(windowWidth/1.4,windowHeight/1.7)
+  button.mousePressed(buttonPressed);
+  function buttonPressed() {
+  window.location.href = "main.html";
+}
+
 }
 
 function draw() {
- // background(220);
   
-  fill("purple");
-  ellipse(xpos, height/2, width/3, height/3);
+  background('red');
   
-  if(xpos > width) {
-    xspeed = -5; 
-    }
-    
-  if (xpos <  2){
-    xspeed = 5;
-  }
-    
-  xpos += xspeed;
+  image(img1, windowWidth/2, 0)
+
 }
