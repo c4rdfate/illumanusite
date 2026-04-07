@@ -6,7 +6,7 @@ let imgfullsized; //not used yet
 let img1; //not used yet
 
 function preload() {
-  img1 = loadImage('test_assets/frame.svg');
+  //img1 = loadImage('test_assets/frame.svg');
 
 }
 
