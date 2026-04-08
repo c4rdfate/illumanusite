@@ -11,7 +11,7 @@ function preload() {
 }
 
 function setup() {
-  //createCanvas(windowWidth, windowHeight); //not needed for now, will be used for testing purposes 
+ // createCanvas(windowWidth, windowHeight); //not needed for now, will be used for testing purposes 
 
 
 }
