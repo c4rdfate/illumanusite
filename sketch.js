@@ -1,5 +1,8 @@
 //svg declarations 
 let img1;
+let ratio;
+let btn;
+
 
 function preload() {
   img1 = loadImage('test_assets/frame.svg');
