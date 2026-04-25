@@ -1,44 +1,49 @@
-const sketch4 = (p) => {
+const sketch4 = (p) => { 
+  let phrase = "THE IMAGE DOES NOT REMAIN STABLE"; 
+  let spots = []; 
+  let font; 
+  let container; 
 
-  let phrase = "THE IMAGE DOES NOT REMAIN STABLE";
-  let spots = [];
-  let font;
+  p.preload = function () { 
+    font = p.loadFont('assets/QEAntonyLark.ttf'); 
+  } 
 
- p.preload = function () {
-    font= p.loadFont('assets/QEAntonyLark.ttf');
-  
-  }
-
-
-p.setup = function () {
-    let c = p.createCanvas(1080, 1920); // temporary size
-    c.parent("sketch4");
-    p.textFont(font); 
-    for (let i = 0; i < 100; i++) {
-    spots.push({
-    x: p.random(p.width),
-    y: p.random(p.height),
-    r: p.random(-6, 10)
-    });
-    }
-
-    p.textAlign(p.CENTER, p.CENTER);
-    p.textSize(5)
+  p.setup = function () { 
+    container = document.getElementById("sketch4"); 
+    let rect = container.getBoundingClientRect(); 
     
-  };
+    let c = p.createCanvas(rect.width, rect.height);
+    c.parent("sketch4"); 
+    
+    p.textFont(font); 
+    p.textAlign(p.CENTER, p.CENTER); 
+    p.textSize(30);
 
-  p.draw = function () {
-    p.clear();
+    for (let i = 0; i < 50; i++) { 
+      spots.push({ 
+        x: p.random(p.width), 
+        y: p.random(p.height), 
+        r: p.random(-6, 10) 
+      }); 
+    } 
+  }; 
 
-    for (let s of spots) {
-    p.push();
-    p.translate(s.x, s.y);
-    p.rotate(p.radians(s.r));
-    p.text(phrase, 0, 0);
-    p.pop();
-    }
-  };
+  p.draw = function () { 
+    p.clear(); 
+    for (let s of spots) { 
+      p.push(); 
+      p.translate(s.x, s.y); 
+      p.rotate(p.radians(s.r)); 
+      p.text(phrase, 0, 0, 200); 
+      p.pop(); 
+    } 
+  }; 
 
-};
+  
+  p.windowResized = function() { 
+    let rect = container.getBoundingClientRect(); 
+    p.resizeCanvas(rect.width, rect.height); 
+  } 
+}; 
 
 new p5(sketch4);

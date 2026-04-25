@@ -17,9 +17,7 @@ body {
   width: 100%;
   position: relative;
   overflow: hidden;
-  
-} 
-
+}
 
 .changelog {
   height: auto;
@@ -33,31 +31,27 @@ body {
 
 .canvas-container {
   position: absolute;
-  
 }
 
-#sketch2{
-  
+#sketch2 {
   width: 40vw;
   height: 80vh;
   right: 5%;
   top: 10%;
   border: double 10px black;
   overflow: hidden;
-
 }
 
-#sketch2:hover{
+#sketch2:hover {
   cursor: pointer;
 }
 
 #sketch4 {
   width: 40vw;
   height: 80vh;
-  left: 20%; 
+  left: 60%;
   top: 5%;
- 
-
+  mask-image: radial-gradient(circle, black 60%, transparent 80%);
 }
 
 /* TEXT STYLES */
@@ -74,7 +68,7 @@ body {
 
 @font-face {
   font-family: "Script";
-  src:  url("assets/QEAntonyLark.ttf") format("woff2");
+  src: url("assets/QEAntonyLark.ttf") format("woff2");
 }
 
 /*  text containers  */
@@ -86,30 +80,34 @@ body {
   z-index: 1;
 }
 
-#text-containerintro{
- left: 30%;
+#text-containerintro {
+  left: 30%;
 }
 
 #text-container1 {
-  top: 10.85%; 
+  top: 10.85%;
   left: 30%;
   transform: rotate(1.5deg);
-
 }
 
-#text-container2{
+#text-container2 {
   top: 20%;
-  left:10%;
+  left: 10%;
 }
 
-#text-container3{
+#text-container3 {
   top: 10%;
   left: 3%;
 }
 
+#text-container4 {
+  top: 10%;
+  left: 10%;
+  transform: rotate(2deg);
+  outline: double 10px rgb(0, 0, 0);
+}
 
 #text-container7 {
-
   transform: rotate(5deg);
   outline: double 4px rgb(0, 0, 0);
 }
@@ -121,7 +119,6 @@ body {
   position: relative;
   font-size: clamp(1rem, 3vw, 4rem);
   line-height: 1.2;
-  
 }
 
 .manuscript-text::after {
@@ -137,7 +134,6 @@ body {
 .accent {
   color: #b33;
   text-shadow: 3px 3px rgb(0, 0, 0);
-
 }
 
 /*  body text  */
@@ -150,12 +146,16 @@ body {
 
 #body-text-intro {
   text-align: center;
-  
 }
 
 #body-text-section1 {
-  line-height: 1.25; 
+  line-height: 1.25;
   text-align: center;
+}
+
+#body-text-section4 {
+  text-align: center;
+  line-height: 2;
 }
 
 #body-text-section7 {
@@ -171,7 +171,7 @@ body {
   line-height: 0.8;
   margin-top: 5px;
   padding: 5px;
-  
+
   background: radial-gradient(circle, rgba(44, 33, 2, 0.555), transparent 70%);
 
   box-shadow:
@@ -215,48 +215,45 @@ body {
 
 /* IMAGE STYLES */
 
-.fullframe{
-  position:absolute;
+.fullframe {
+  position: absolute;
   background-size: cover;
   background-position: center;
   pointer-events: none;
-  mask-image: linear-gradient(to bottom, transparent 0%,  black 5%, black 95%, transparent 100%);
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
 }
 
 #frame1 {
-
   background-image: url(assets/iconography_border.png);
   height: clamp(1dvh, 100dvh, 100dvh);
   width: clamp(1vw, 100vw, 100vw);
-  
-  
 }
 
-.canvasframe{
-
+.canvasframe {
   position: absolute;
-  background-size:cover; 
+  background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  pointer-events: none; 
-  z-index: 2; 
-
+  pointer-events: none;
+  z-index: 2;
 }
 
-#canvasframe2{
-
+#canvasframe2 {
   background-image: url("assets/saint_border.png");
   width: 100%;
   height: 100%;
-  
-
 }
 
 .image-container {
   position: absolute;
   top: 10%;
-  left: 25%
-
+  left: 25%;
 }
 
 #img3 img {
@@ -264,7 +261,6 @@ body {
   height: auto;
   transform: rotate(2deg);
 }
-
 
 /*  SCROLLBAR  */
 ::-webkit-scrollbar {
