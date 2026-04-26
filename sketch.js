@@ -22,7 +22,7 @@ function setup() {
 }
 
 function draw() {
-   background('red');
+  background('red');
   
  image(img1, windowWidth/2, 0);
 

@@ -10,6 +10,10 @@ body {
 
 /*  WELCOME SCREEN  */
 
+canvas {
+  display: block;
+}
+
 /*  MAIN PAGE SECTIONS  */
 
 .section {
@@ -93,7 +97,7 @@ body {
   background: linear-gradient( #bf953f,  #b38728, #fbf5b7, #aa771c),  url("assets/websitebg.jpg");
   background-blend-mode: multiply;
   box-shadow: inset 4px 4px 8px rgba(0,0,0,0.4), inset -4px -4px 8px rgba(255,255,255,0.3);
-  
+  outline: double 4px rgb(0, 0, 0);
 }
 
 #text-container2 {
