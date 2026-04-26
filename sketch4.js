@@ -9,12 +9,15 @@ const sketch4 = (p) => {
   } 
 
   p.setup = function () { 
+    
+    
     container = document.getElementById("sketch4"); 
     let rect = container.getBoundingClientRect(); 
     
     let c = p.createCanvas(rect.width, rect.height);
     c.parent("sketch4"); 
     
+    p.fill(0,0,0,95);
     p.textFont(font); 
     p.textAlign(p.CENTER, p.CENTER); 
     p.textSize(30);
