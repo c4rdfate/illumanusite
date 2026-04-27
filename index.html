@@ -1,24 +1,351 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Illuminated Manuscript</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
+
+    <link rel="icon" type="image/png" href="assets\favicon\favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets\favicon\favicon.svg" />
+    <link rel="shortcut icon" href="assets\favicon\favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets\favicon\apple-touch-icon.png"" />
+    <link rel="manifest" href="assets\favicon\site.webmanifest" />
   </head>
 
   <body>
 
-    <script src="sketch.js"></script>
+    <!-- SECTION Title -->
+    <div class="section" id="start">
 
-   
+      <div class="fullframe" id="frame2"> 
 
+      <!-- Text -->
+      <div class="text-container" id="text-containerstart">
+        <p
+          class="manuscript-text"
+          data-text="New Canons: An Artist Manifesto."
+        >
+          <span class="initial">N</span>
+          ew Canons: An Artist 
+          <span class="accent"> Manifesto.</span>
+        </p>
+          
+      </div>
+      </div>
+
+    </div>
+
+    <!-- SECTION INTRODUCTION -->
+
+    <div class="section" id="introduction">
+
+      <!-- Text -->
+      <div class="text-container" id="text-containerintro">
+        <p
+          class="manuscript-text"
+          data-text="The artist leviathan shoates has created this manuscript for understanding."
+        >
+          <span class="initial">T</span>
+          he artist Leviathan Shoates has created this manuscript for
+          <span class="accent"> understanding.</span>
+        </p>
+
+        <p class="body-text" id="body-text-intro">
+          within the artist engages with things such as <br />
+          saints<br />
+          religion<br />
+          queerness<br />
+          cyberspace and digital art<br />
+          this is a place to approach the recurring themes of work <br />
+          these meanings are not fixed, instead exist as ongoing inquiries
+          <br />
+          nothing in this manuscript is finished <br />
+          it is intended to remain as subject to change over time <br />
+          as work continues to evolve <br />
+        </p>
+      </div>
+
+    </div>
+
+    <!-- SECTION 1: ICONOGRAPHY  -->
+
+    <div class="section" id="section1">
+
+      <div class="fullframe" id="frame1"> 
+
+      <!-- Text -->
+      <div class="text-container" id="text-container1">
+        <p class="manuscript-text" data-text="Iconography is a system.">
+          <span class="initial" id="initialicon">  I</span>
+          conography is a <span class="accent"> system.</span>
+        </p>
+
+        <p class="body-text" id="body-text-section1">
+          it repeats.<br />
+          it defines what can be seen.<br />
+          it defines what is sacred.<br />
+
+          it constructs a canon.<br />
+          this canon privileges certain bodies. <br />
+          white. <br />
+          gender conforming. <br />
+          other bodies are excluded. <br />
+          they are denied sanctity. <br />
+          this absence is visible. <br />
+          through queer aesthetics and intervention <br />
+          disrupt the system <br />
+          sacred can expand <br />
+        </p>
+      </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2: SAINTS -->
+
+    <div class="section" id="section2">
+      <!-- P5.js Canvas -->
+      <div class="canvas-container" id="sketch2">
+        <div class = "canvasframe" id="canvasframe2">
+        <script src="sketch2.js"></script>
+        </div>
+      </div>
+
+      <!-- Margin Text -->
+
+      <div class="margin-text left" id="mtl-section2">
+        repetition becomes belief <br/> 
+        refusal ?? or continuation...
+      </div>
+
+      <div class="margin-text right" id="mtr-section2">
+        SAINT : A person acknowledged as holy or virtuous. <br/>
+        the virgin mary in different forms
+      </div>
+
+      <div class="margin-text right" id="mtr-section2_1">
+        SAINT: A repeated image that becomes sacred through repetition.
+      </div>
+
+      <!-- Text -->
+      <div class="text-container" id="text-container2">
+        <p class="manuscript-text" data-text="The saint is not singular.">
+          <span class="initial">T</span>
+          he saint is not <span class="accent"> singular.</span>
+        </p>
+
+        <p class="body-text" id="body-text-section2">
+          it cannot exist in a singular image.<br />
+          it is reworked.<br />
+          it exist in multiples.<br />
+          it can embody different narratives.<br />
+          it's divinity is not inherent.<br />
+          it becomes divine through refusal. <br />
+          a saint is in a constant state of flux.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- SECTION 3: QUEER FORM -->
+
+    <div class="section" id="section3">
+      <!-- P5.js Canvas -->
+      <div class="canvas-container" id="sketch"></div>
+
+      <!-- Text -->
+      <div class="text-container" id="text-container3">
+        <p
+          class="manuscript-text"
+          data-text="The queer form is more than just body."
+        >
+          <span class="initial">T</span>
+          he queer form is more than just <span class="accent"> body.</span>
+        </p>
+
+        <p class="body-text" id="body-text-section3">
+          it disrupts the standard narrative. <br />
+          it disrupts space and time. <br />
+          it renders queer experiences visible. <br />
+          it renders queer people visible. <br />
+          it is made by becoming. <br />
+        </p>
+      </div>
+      <!-- Image -->
+        <div class="image-container" id="img3" >
+        <img src="assets/queer_img.png" alt="mary" />
+      </div>
+    </div>
+
+    <!-- SECTION 4: REPRODUCTION -->
+
+    <div class="section" id="section4">
+      <!-- P5.js Canvas -->
+      <div class="canvas-container" id="sketch4">
+        <script src="sketch4.js"></script>
+      </div>
+
+      <!-- Text -->
+      <div class="text-container" id= "text-container4">
+        <p
+          class="manuscript-text"
+          data-text="The image does not remain stable."
+        >
+          <span class="initial">T</span>
+          he image does not remain <span class="accent"> stable.</span>
+        </p>
+
+        <p class="body-text" id="body-text-section4">
+          the image does not remain stable. <br />
+
+          through reproduction, it changes. <br />
+          through reproduction, it multiples <br />
+
+          just as saint does not stay the same <br />
+          it shifts depending on context. <br />
+
+          each time it becomes something else.<br />
+        </p>
+
+        <!-- Image -->
+      </div>
+    </div> 
+
+
+    <!-- SECTION 5: DIGITAL ART -->
+
+    <div class="section" id="section5">
+
+      <!-- Margin Text -->
+
+      <div class="margin-text right">
+      the medium determines form <br/> 
+      removal from digital alters the work<br />
+      the process remains active <br /> 
+
+      </div>
+
+      <div class="margin-text right" id="mtr-section5">
+        the process begins before the file <br /> 
+        first creation is relative <br/>  
+        the digital resists fixation
+      </div> 
+
+      <div class="margin-text left" id="mtl-section5">
+        the file is never finished <br />
+        <br/> devotion is created when the author <br />
+        continues to work on that file beyond first creation <br />
+        <br /> however there is importance in the first image<br/>
+        what is sacred without a first image? <br /> 
+        the inital idea, the inital creation, that version <br /> 
+        it is the purest form of the process <br /> 
+        even if no one sees it, the file remembers <br />
+      </div>
+
+      <!-- Text -->
+      <div class="text-container" id="text-container5">
+        <p
+          class="manuscript-text"
+          data-text="The work exists in a digital form."
+        >
+          <span class="initial">T</span>
+          he work exists in a digital <span class="accent"> form.</span>
+        </p>
+
+        <p class="body-text" id="body-text-section5">
+          it can be altered <br />
+          it can return in new forms. <br />
+
+          there is no original state <br />
+          only versions <br />
+
+          the image continues beyond the first creation. <br />
+        </p>
+
+        <!-- Image -->
+      </div>
+    </div>
+
+    <!-- SECTION 6: CYBERSPACE -->
+
+    <div class="section" id="section6">
+ 
+        <!-- Embed -->
+         
+      <div id="embed">
+        <iframe src="https://newart.city/show/thecathedral" title="An online exhibit titled Apotheosis of the Uncanonized" loading="lazy" > </iframe>
+        </div>
+
+      <!-- Text -->
+      <div class="text-container" id="text-container6">
+        <p class="manuscript-text" data-text="The work exists in cyberspace.">
+          <span class="initial">T</span>
+          he work exists in <span class="accent"> cyberspace.</span>
+        </p>
+
+        <p class="body-text" id="body-text-section6">
+          for many queer individuals, <br />
+          this space is the only place where one can exist. <br />
+
+          it is sanctuary. <br />
+          it is necessary. <br />
+
+          if the works speak to queer life, <br />
+          it must exist here. <br />
+
+          it must be seen here. <br />
+        </p>
+
+      </div>
+    </div>
+
+    <!-- SECTION 7: CONCLUSION -->
+
+    <div class="section" id="section7">
+      
+      <div class="fullframe" id="frame2"> 
+
+      <!-- Text -->
+      <div class="text-container" id="text-container7">
+        <p class="manuscript-text" data-text="The work does not end.">
+          <span class="initial">T</span>
+          he work does not <span class="accent"> end.</span>
+        </p>
+
+        <p class="body-text" id="body-text-section7">
+          this manuscript is not a conclusion. <br />
+          it is a starting point. <br />
+
+          these meanings are not fixed. <br />
+          they are ongoing inquiries. <br />
+
+          the work does not end. <br />
+          to be queer is to continue. <br />
+          to continue is to become. <br />
+        </p>
+
+      </div>
+      </div>
+    </div>
+
+    <!-- SECTION 7: CHANGELOG -->
+    <div class="changelog-section" id="changelog">
+      <h2 class="changelog-title">record of changes</h2>
+
+      <div class="changelog-entry">
+        <span class="version">v1.0</span>
+        <p>
+          initial construction of the manuscript. 
+        </p>
+      </div>
+      <p class="changelog-ending">entries will continue.</p>
+    </div>
 
   </body>
-  </div>
+
 </html>

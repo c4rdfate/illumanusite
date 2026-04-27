@@ -1,6 +1,6 @@
 let mary1, mary2, mary3;
-let mary = [];
-let index = 0;
+let mary = []; //array
+let index = 0; //index
 
 function preload() {
 
@@ -15,6 +15,7 @@ function preload() {
 
 function setup() {
 
+  //dynamic resizing
   container = document.getElementById("sketch2");
 
   let rect = container.getBoundingClientRect();
@@ -29,7 +30,9 @@ function setup() {
 
 function draw() {
     
-    clear();
+    clear(); //so that the last image goes away
+
+    //dynamic resizing for images
     let img = mary[index];
 
     let scale = min(width / img.width, height / img.height) * 1;
